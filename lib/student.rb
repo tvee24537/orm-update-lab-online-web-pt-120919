@@ -24,7 +24,7 @@ class Student
   end
   
   def drop_table
-    
+    DB[:conn].execute("DROP TABLE IF EXISTS students")    
   end
   
   def save
